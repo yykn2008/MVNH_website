@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<article id="events">
+<section>
+<p>
+  <b>Event:</b>
+  <%= @comment.event_id %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @comment.details %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @comment.author %>
+</p>
+</section>
+<section>
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
+</section>
+</article>

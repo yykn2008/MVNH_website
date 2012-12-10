@@ -1,0 +1,27 @@
+<h1>Organisations</h1>
+
+<article id = "organisations" >
+
+<% @organisations.each do |organisation| %>
+  <section>
+    <h1><%= organisation.Name %></h1>
+    <p><%= organisation.description %></p>
+    <% if user_signed_in? %>
+    <p>
+      <%= link_to 'Show', organisation %>
+      <%= link_to 'Edit', edit_organisation_path(organisation) %>
+      <%= link_to 'Destroy', organisation, confirm: 'Are you sure?', method: :delete %>
+    </p>
+<% end %>
+</section>
+<% end %>
+
+<% if user_signed_in? %>
+
+  <section>
+    <%= link_to 'New Organisation', new_organisation_path %>
+  </section>
+  
+<% end %>
+
+</article>

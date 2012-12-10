@@ -1,0 +1,111 @@
+// Place all the styles related to the MvnhCore controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "site-branding";
+@import "popout";
+
+article#home {
+	
+	padding-left: 20px;
+	
+	section {
+	@include popout;
+	margin-left: 20px;
+	margin-right: 50px;
+	padding: 20px;
+	background-color: #2EB82E;
+
+		h1,h2{
+			color: $white;
+			font-size: 20px;
+
+		}
+
+	}	
+
+}
+
+article#home section:nth-child(even) {
+
+	background-color: #398F39;
+}
+
+
+article#resources {
+	
+	padding-left: 20px;
+	
+	section {
+	@include popout;
+	margin-left: 20px;
+	margin-right: 50px;
+	padding: 20px;
+	background-color: #2EB82E;
+
+		h1,h2{
+			color: $white;
+			font-size: 20px;
+
+		}
+
+	}	
+
+}
+
+article#resources section:nth-child(even) {
+
+	background-color: #398F39;
+}
+
+article#whatishere {
+	
+	padding-left: 20px;
+	
+	section {
+	@include popout;
+	margin-left: 20px;
+	margin-right: 50px;
+	padding: 20px;
+	background-color: #2EB82E;
+
+		h1,h2{
+			color: $white;
+			font-size: 20px;
+
+		}
+
+	}	
+
+}
+
+article#whatishere section:nth-child(even) {
+
+	background-color: #398F39;
+}
+
+article#contact {
+	
+	padding-left: 20px;
+	
+	section {
+	@include popout;
+	margin-left: 20px;
+	margin-right: 50px;
+	padding: 20px;
+	background-color: #2EB82E;
+
+		h1,h2{
+			color: $white;
+			font-size: 20px;
+
+		}
+
+	}	
+
+}
+
+article#contact section:nth-child(even) {
+
+	background-color: #398F39;
+}

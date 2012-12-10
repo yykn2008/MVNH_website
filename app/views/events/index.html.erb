@@ -1,0 +1,60 @@
+<article id="events">
+  <h1>Natural History Related Events in Mole Valley</h1>
+
+  <section id="butterfly" >
+
+  <p>
+    <%= image_tag "butterflies/Adonis-Blue-face.jpg", :class => 'butterfliesLeft',
+                    :title => 'Adonis Blue face on. Copyright: Jeremy Early', :alt => "Adonis Blue butterfly face on" %>
+  </p>
+  <p>
+    Mole Valley has a lively and active community of natural history enthusiasts. There are events
+    that suite all levels of experience. We provide here some links that will keep you up to date
+    with natural history related activities in Mole Valley.
+  </p>
+  <p>
+    The RSPB Dorking and District Local Group organise regular events throughout the year that are
+    open to all. You do not need to be an expert birdwatcher. Indeed you will find many are ideal
+    for those that are wanting to get started. An up to date programme of events can be found
+    <%= link_to("here", "http://www.rspb.org.uk/groups/dorkinganddistrict/events/", {:target => "_blank"}) %>.
+  </p>
+  </section>
+
+  <section id="Adder" >
+  <p>
+  <%= image_tag "Adders-dancing.jpg", :class => 'butterfliesRight',
+                    :title => 'Male Adders dancing. Copyright: Jeremy Early', :alt => "Male Adders dancing" %>
+  </p>
+  <p>
+    Amphibians and Reptiles are important indicators of habitat quality. The Surrey Amphibian and Reptile
+    Group is an extremely active and enthusiastic group that provides important support for some of our
+    most threatened habitats. An up to date list of their events can be found
+    <%= link_to("here", "http://surrey-arg.org.uk/SARG/30000-CommitteeTools/calendar/SARGcalendar.asp", {:target => "_blank"}) %>.
+  </p>
+  </section>
+
+<% @events.each do |event| %>
+  <section>
+    <h1><%= event.title %></h1>
+    <h2><%= event.date %></h2>
+    <p><%= event.description %></p>
+    
+    <% if user_signed_in? %>
+    <p>
+      <%= link_to 'Show', event %>
+      <%= link_to 'Edit', edit_event_path(event) %>
+      <%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %></td>
+  </p>
+<% end %>
+</section>
+<% end %>
+
+<section>
+<% if user_signed_in? %>
+<%= link_to 'New Event', new_event_path %>
+<% end %>
+<%= link_to 'List Comments', comments_path %>
+</section>
+
+
+</article>

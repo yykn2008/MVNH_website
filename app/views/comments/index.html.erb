@@ -1,0 +1,26 @@
+<article id="events">
+
+<h1>Comments</h1>
+
+<% @comments.each do |comment| %>
+  
+  <section>
+    <P>Event: <%= comment.event_id %></P>
+    <P><%= comment.details %></P>
+    <P>Author: <%= comment.author %></P>
+   <% if user_signed_in? %>
+    <p>
+	<%= link_to 'Show', comment %>
+     <%= link_to 'Edit', edit_comment_path(comment) %>
+     <%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %>
+    </p>
+    <% end %>
+ </section>   
+<% end %>
+
+
+<section>
+<%= link_to 'Back', events_path %>
+</section>
+
+</article>

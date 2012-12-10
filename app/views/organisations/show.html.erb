@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<article id = "organisations" >
+<section>
+<p>
+  <b>Name:</b>
+  <%= @organisation.Name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @organisation.description %>
+</p>
+</section>
+
+<section>
+<%= link_to 'Edit', edit_organisation_path(@organisation) %> |
+<%= link_to 'Back', organisations_path %>
+</section>
+
+</article>

@@ -1,0 +1,137 @@
+@import "site-branding"; 
+
+body {
+
+	font-family: $body-font;
+}
+
+h1, h2{
+
+	color: $near-black;
+	font-family: $heading-font;
+	padding: 0 15px;
+}
+
+h3 {
+	color: $dark-green;
+	font: italic bold 20pc $accent-font;
+}
+
+div#container {
+
+	display: block;
+	position: relative;
+	min-height: 1000px;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: rgb(59,236,59);
+}
+
+header#page_header {
+	background-color: rgb(59,236,59);
+	text-align: center;
+}
+
+nav#utility {
+	float: right;
+	font-size: 1em;
+	padding: 0 10px;
+
+}
+
+section#main {
+
+	float: left;
+	
+img{
+
+	float: right;
+	margin:0 10px 10px 0;
+	}
+}
+
+
+
+section#animals {
+
+	float: left;
+	
+img{
+
+	float: left;
+	margin:0 10px 10px 0;
+	}
+}
+
+section#butterfly {
+
+	float: left;
+	
+img{
+
+	float: right;
+	width: 300px;
+	height: 200px;
+	margin:0 10px 10px 0;
+	}
+}
+
+section#Adder {
+
+	float: left;
+	
+img{
+
+	float: left;
+	width: 280px;
+	height: 190px;
+	margin:0 10px 10px 0;
+	}
+}
+
+section#bird {
+
+	float: left;
+	
+img{
+
+	float: left;
+	width: 350px;
+	height: 250px;
+	margin:0 10px 10px 0;
+	}
+}
+
+section#mute {
+
+	float: left;
+	
+img{
+
+	float: right;
+	width: 350px;
+	height: 250px;
+	margin:0 10px 10px 0;
+	}
+}
+
+section#hill {
+
+	float: left;
+	
+img{
+
+	float: left;
+	width: 350px;
+	height: 250px;
+	margin:0 10px 10px 0;
+	}
+}
+
+
+footer{
+
+	clear: center;
+
+}
